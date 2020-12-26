@@ -11,7 +11,8 @@ $color_subFooter:#272727;
 $color_lang_active:#e9e8e8;
 $color_lang:#989898;
 $color_footerText:#989898;
-
+$font_arm_header:'ArTarumianNorMatenagir';
+$font_arm_text:'ArTarumianKamar';
 
 *{
     margin: 0;
@@ -23,5 +24,5 @@ $color_footerText:#989898;
 
 
 body{
-    background: $color_background
+    background: $color_background;
 }

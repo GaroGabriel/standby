@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'ArTarumianNorMatenagir';
+    src: url('ArTarumianNorMatenagir.woff2') format('woff2'),
+        url('ArTarumianNorMatenagir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArTarumianKamar';
+    src: url('ArTarumianKamar.woff2') format('woff2'),
+        url('ArTarumianKamar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
