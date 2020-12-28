@@ -6,6 +6,373 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 1100px;
+  min-width: 290px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 body {
   background: #eceef5;
+}
+
+header {
+  background: #333;
+}
+header .container {
+  height: 60px;
+  padding: 6px 40px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header__logo img {
+  height: 40px;
+}
+header .container .header__lang a {
+  text-decoration: none;
+}
+header .container .header__lang a span {
+  color: #989898;
+  margin: 0 10px;
+  font-size: 14px;
+}
+header .container .header__lang a span:hover {
+  color: #e9e8e8;
+}
+header .container .header__lang a .hy {
+  color: #e9e8e8;
+  font-family: "ArTarumianKamar";
+}
+
+section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+section .container .main__section_header h1 {
+  font-family: "ArTarumianNorMatenagir";
+  font-size: 30px;
+  color: #16100f;
+}
+section .container p {
+  text-align: center;
+  color: #666;
+  font-family: "ArTarumianKamar";
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+section .main__section_btns {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  padding: 20px 0;
+}
+section .main__section_btns .main__section_btn {
+  margin: 8px;
+}
+section .main__section_btns .main__section_btn a {
+  display: inline-block;
+  min-width: 320px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  background: #07b3d8;
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "ArTarumianNorMatenagir";
+  box-shadow: 1px 1px 5px #333;
+}
+section .main__section_btns .main__section_btn a:hover {
+  box-shadow: 3px 3px 5px #666;
+  text-shadow: 3px 3px 5px #666;
+}
+
+footer {
+  background: #333;
+}
+footer .main__footer .container .main__footer_inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  display: flex;
+  align-content: center;
+  margin: 5px 30px;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a i {
+  color: #07b3d8;
+  font-size: 30px;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a span {
+  align-self: center;
+  margin: 0 10px;
+  color: #989898;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a span:hover {
+  color: #e9e8e8;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials a {
+  text-decoration: none;
+  font-size: 30px;
+  margin: 0 10px;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .youtube {
+  color: #FF0000;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .facebook {
+  color: #4267B2;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .whatsapp {
+  color: #25D366;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking {
+  margin-top: 20px;
+  color: #989898;
+}
+footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking div {
+  margin: 8px 0;
+}
+footer .main__footer .container .main__footer_inner .main__footer_address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 4;
+  text-decoration: none;
+}
+footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text {
+  font-family: "ArTarumianKamar";
+  color: #989898;
+  font-weight: 200;
+  margin-bottom: 25px;
+  font-size: 14px;
+  text-align: center;
+}
+footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text i {
+  color: #07b3d8;
+  font-size: 30px;
+}
+footer .main__footer .container .main__footer_inner .main__footer_address div {
+  margin: 0 auto;
+}
+footer .sub__footer {
+  background: #272727;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 3px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .main__section_btn {
+    width: 100%;
+  }
+  .main__section_btn a {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 422px) {
+  .container {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  header .container .header__logo img {
+    height: 35px;
+  }
+  header .container .header__lang a span {
+    margin: 0 3px;
+    font-size: 12px;
+  }
+
+  footer {
+    background: #333;
+  }
+  footer .main__footer .container .main__footer_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-content: center;
+    margin: 5px 30px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a i {
+    color: #07b3d8;
+    font-size: 30px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a span {
+    align-self: center;
+    margin: 0 10px;
+    color: #989898;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a span:hover {
+    color: #e9e8e8;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials a {
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .youtube {
+    color: #FF0000;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .facebook {
+    color: #4267B2;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials .whatsapp {
+    color: #25D366;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking {
+    margin-top: 20px;
+    color: #989898;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking div {
+    margin: 8px 0;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 4;
+    text-decoration: none;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text {
+    font-family: "ArTarumianKamar";
+    color: #989898;
+    font-weight: 200;
+    margin-bottom: 25px;
+    font-size: 13px;
+    text-align: center;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text i {
+    color: #07b3d8;
+    font-size: 30px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address div {
+    margin: 0 auto;
+  }
+  footer .sub__footer {
+    background: #272727;
+    color: #444;
+    display: flex;
+    justify-content: center;
+  }
+
+  section .container {
+    margin: 20px 0;
+  }
+  section .container .main__section_header h1 {
+    font-size: 25px;
+  }
+  section .container p {
+    padding: 0 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    line-height: 23px;
+    letter-spacing: 0.3px;
+  }
+  section .main__section_btns {
+    width: 100%;
+    display: flex;
+    margin: 20px;
+    padding: 10px 0;
+  }
+  section .main__section_btns .main__section_btn {
+    margin: 8px;
+  }
+  section .main__section_btns .main__section_btn a {
+    font-size: 25px;
+    padding: 8px 25px;
+  }
+
+  footer .main__footer .container .main__footer_inner {
+    padding: 15px 0;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email {
+    margin-bottom: 20px;
+    margin: 0 20px 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_phone_email a i {
+    font-size: 25px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_socials a {
+    font-size: 30px;
+    margin: 0 8px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking {
+    border-top: 1px solid #444;
+    margin-top: 10px;
+    padding: 15px 0;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_contacts .main__footer_banking div {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text {
+    border-top: 1px solid #444;
+    margin-bottom: 25px;
+    padding-top: 15px;
+  }
+  footer .main__footer .container .main__footer_inner .main__footer_address .main__footer_address_text i {
+    color: #07b3d8;
+    font-size: 25px;
+  }
+  footer .sub__footer {
+    background: #272727;
+    color: #444;
+    display: flex;
+    justify-content: center;
+  }
 }
